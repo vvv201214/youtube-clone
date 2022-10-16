@@ -1,0 +1,244 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+.header_logo{
+    width: 80px;
+    object-fit: contain;
+    /* cursor: pointer; */
+}
+.header_left, .header_right{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.header_centre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 2%;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.header_centre input{
+    /* border: none; */
+    /* width: 86%; */
+    /*  */
+}
+.search_input{
+    width: 100%;
+    /* border: 2px solid red; */
+    border: none;
+    padding: 3px;
+}
+.search_input:focus{
+    outline: none;
+    /* border: 1px solid red; */
+    /* border: none; */
+}
+.search_button{
+    cursor: pointer;
+    height: 30px;
+    color: grey;
+    background-color: rgb(243, 243, 243);
+    border-left: 1px solid grey;
+}
+
+/* ---------sideBar and MainContent------------ */
+
+.side_maincontent{
+    display: flex;
+}
+.sidebar{
+    flex: 0.2;
+}
+.maincontent{
+    flex: 0.8;
+}
+.sidebar_content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 20px;
+}
+.sidebar_content:hover{
+    background-color: rgb(187, 187, 187);
+    cursor: pointer;
+}
+.sidebar_content:hover > .sidebarContent_icon{
+    color: red;
+}
+.sidebar_content:hover > .sidebarContent_title{
+    font-weight: 500;
+}
+.hr_line {
+    height: 1px;
+    border: 0;
+    background-color: lightgray;
+}
+.recommended_video{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+}
+/* .sidebarContent_icon{
+    color: red;
+} */
+/* ----------------- Recommended video---------------- */
+
+.video_card{
+    width: 260px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.thumbnail{
+    width: 260px;
+    height: 152px;
+    cursor: pointer;
+}
+.video_info{
+    display: flex;
+    margin-top: 5px;
+}
+.video_text{
+    margin-top: -18px;
+    margin-left: 5px;
+}
+.video_text h4{
+    font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+.video_text p{
+    color: grey;
+    margin-top: -10px;
+    font-size: 13px;
+}
+
+/* ------------searched video------------- */
+.searched_video{
+    margin-top: 30px;
+}
+.search_video_card{
+    display: flex;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.search_thumbnail{
+    /* height: 200px; */
+    width: 360px;
+    cursor: pointer;
+}
+.search_video_info{
+    margin-left: 10px;
+}
+.search_video_info h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-top: 10px;
+}
+.view_time{
+    color: grey;
+    margin-top: -10px;
+    font-size: 15px;
+}
+.search_video_text{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.description{
+    color: grey;
+    /* margin-top: -10px; */
+    font-size: 15px;
+}
+
+/* -----------Running video-------------- */
+
+.running_video{
+    display: flex;
+    /* gap: 10px; */
+}
+.main_video_run{
+    flex: 60%;
+    margin-left: 100px;
+    /* border: 1px solid red; */
+}
+.side_video{
+    flex: 40%;
+    margin-right: 100px;
+    /* border: 1px solid red; */
+}
+.run_text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.run_text p{
+    color: gray;
+    font-size: 15px;
+}
+.run_card{
+    width: 92%;
+}
+.run_icon{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.channel_subs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    color: white;
+    background-color: red;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.avatar h4{
+    font-weight: 500;
+}
+.run_description{
+    margin-top: 10px;
+    width: 90%;
+    color: grey;
+    font-size: 15px;
+    margin-left: 5%;
+}
+.showmore{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 5%;
+    margin-top: 20px;
+    border: none;
+    background-color: none;
+    color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+.run_card h2{
+    margin-top: 50px;
+    text-align: center;
+}
