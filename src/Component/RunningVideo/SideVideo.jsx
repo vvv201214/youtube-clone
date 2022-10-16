@@ -3,14 +3,12 @@ import SideVideoCard from "./SideVideoCard";
 
 export default function SideVideo({sideVideoObj, running}) {
   //runSideVideos, setRunSideVideos
-  console.log(running);
     useEffect(()=>{
       let update = (sideVideoObj.runSideVideos).filter((elem)=>{
           return elem.etag !== running.etag;
       })
       sideVideoObj.setRunSideVideos(update)
-      // console.log(sideVideoObj.runSideVideos);
-    },[])
+    },[running])
   return (
     <>
       {(sideVideoObj.runSideVideos).map((elem)=>{

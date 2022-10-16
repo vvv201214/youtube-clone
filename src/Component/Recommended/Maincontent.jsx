@@ -14,8 +14,8 @@ export default function Maincontent() {
     axios.get(`https://www.googleapis.com/youtube/v3/search?key=${key}&type=vi
                 deo&part=snippet&maxResults=${30}&q=${inputValue}`)
     .then((res)=>{
-      console.log(res.data);
         setData(res.data.items)
+        searchValue.setRunSideVideos(res.data.items);
     }).catch((error)=>{
       console.log(error);
     })

@@ -11,7 +11,6 @@
 .header_logo{
     width: 80px;
     object-fit: contain;
-    /* cursor: pointer; */
 }
 .header_left, .header_right{
     display: flex;
@@ -28,21 +27,13 @@
     border: 1px solid grey;
     border-radius: 3px;
 }
-.header_centre input{
-    /* border: none; */
-    /* width: 86%; */
-    /*  */
-}
 .search_input{
     width: 100%;
-    /* border: 2px solid red; */
     border: none;
     padding: 3px;
 }
 .search_input:focus{
     outline: none;
-    /* border: 1px solid red; */
-    /* border: none; */
 }
 .search_button{
     cursor: pointer;
@@ -87,11 +78,8 @@
 .recommended_video{
     display: flex;
     flex-wrap: wrap;
-    /* gap: 20px; */
 }
-/* .sidebarContent_icon{
-    color: red;
-} */
+
 /* ----------------- Recommended video---------------- */
 
 .video_card{
@@ -136,7 +124,6 @@
     cursor: pointer;
 }
 .search_thumbnail{
-    /* height: 200px; */
     width: 360px;
     cursor: pointer;
 }
@@ -161,7 +148,6 @@
 }
 .description{
     color: grey;
-    /* margin-top: -10px; */
     font-size: 15px;
 }
 
@@ -169,17 +155,14 @@
 
 .running_video{
     display: flex;
-    /* gap: 10px; */
 }
 .main_video_run{
     flex: 60%;
     margin-left: 100px;
-    /* border: 1px solid red; */
 }
 .side_video{
     flex: 40%;
     margin-right: 100px;
-    /* border: 1px solid red; */
 }
 .run_text{
     display: flex;
@@ -206,8 +189,18 @@
     align-items: center;
 }
 .btn{
+    cursor: pointer;
     color: white;
     background-color: red;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.btn_subs{
+    background-color: rgb(194, 194, 194);
+    color: rgb(85, 85, 85);
+    cursor: pointer;
     height: 40px;
     border: none;
     border-radius: 5px;
@@ -241,4 +234,45 @@
 .run_card h2{
     margin-top: 50px;
     text-align: center;
+}
+.run_like{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.run_dislike{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* ------------run side video------------ */
+.side_run_video_card{
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.side_run_thumbnail{
+    width: 200px;
+    
+}
+.side_run_video_info{
+    margin-top: -15px;
+    margin-left: 5px;
+}
+.side_run_video_info h4{
+    font-size: 15px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+}
+.side_run_view_time{
+    font-size: 15px;
+    color: gray;
+}
+.side_run_channel{
+    color: gray;
 }

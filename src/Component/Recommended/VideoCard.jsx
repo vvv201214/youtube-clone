@@ -11,7 +11,6 @@ export default function VideoCard({image, channel, title, elem}) {
     let runningVideo = useContext(context);
 
     function run(e){
-        console.log(runningVideo);
         runningVideo.setShow(true);
         runningVideo.setRunning(e);
     }

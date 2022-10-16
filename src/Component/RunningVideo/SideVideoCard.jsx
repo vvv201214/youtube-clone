@@ -1,11 +1,10 @@
-import React,{useContext} from 'react'
-import Avatar from '@mui/material/Avatar';
+import React,{useContext, useRef} from 'react'
 import {context} from "../Main";
 
 export default function SideVideoCard({image, elem, channel, title}) {
 
-    let view = Math.ceil(Math.random()*999);
-    let time = Math.ceil(Math.random()*500);
+    let view = useRef(Math.ceil(Math.random()*999));
+    let time = useRef(Math.ceil(Math.random()*500));
     let runningVideo = useContext(context);
 
     function run(e){
@@ -19,11 +18,11 @@ export default function SideVideoCard({image, elem, channel, title}) {
             <img className='side_run_thumbnail' src={image} />
             <div className='side_run_video_info'>
                 <h4>{title}</h4>
-                <div className='side_run_video_text'>
+                <div className='side_run_channel'>
                     <p>{channel}</p>
                 </div>
-                <p className='view_time'>
-                    {view < 100 ? `${view}M` : `${view}K`} • {(time > 30 && time < 360) ? `${Math.floor(time/30)} months ago` : (time >= 360) ? `${Math.floor(time/(12*30))} year ago` : `${time} days ago`}
+                <p className='side_run_view_time'>
+                    {view.current < 100 ? `${view.current}M` : `${view.current}K`} • {(time.current > 30 && time.current < 360) ? `${Math.floor(time.current/30)} months ago` : (time.current >= 360) ? `${Math.floor(time.current/(12*30))} year ago` : `${time.current} days ago`}
                 </p>                        
             </div>
         </div>
