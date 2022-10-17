@@ -13,10 +13,11 @@ export default function Main() {
   let [show, setShow] = useState(false);
   let [running, setRunning] = useState({});
   let [runSideVideos, setRunSideVideos] = useState([]);
+  const [activeHome, setActiveHome] = useState(true);
 
   return (
     <>
-      <context.Provider value={{inputValue, setInputValue, setShow, setRunning, setRunSideVideos}}>
+      <context.Provider value={{inputValue, setInputValue, setShow, setRunning, setRunSideVideos, setActiveHome, activeHome}}>
         <Header />
         {show ? <RunningVideo running={running} sideVideo={{runSideVideos, setRunSideVideos}}/> :
         <div className='side_maincontent'>

@@ -93,7 +93,7 @@ export default function MainVideoRunning({running}) {
                     <Avatar />
                     <h4>{channel}</h4>
                 </div>
-                <button onClick={subscribe} className={`btn${isSubscribe ? '_subs' : ''}`}>{isSubscribe ? SUBSCRIBE : SUBSCRIBED}</button>
+                <button onClick={subscribe} className={`btn${isSubscribe ? '_subs' : ''}`}>{isSubscribe ? SUBSCRIBED : SUBSCRIBE}</button>
             </div>
             <div className='run_description'>{description}</div>
             <div className='showmore'>SHOW MORE</div>

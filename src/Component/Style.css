@@ -79,6 +79,19 @@
     display: flex;
     flex-wrap: wrap;
 }
+.rocommended_text{
+    margin-left: 5px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.sidebar_active a{
+    background-color: rgb(126, 126, 126);
+    cursor: pointer;
+    color: red;
+    font-weight: 500;
+}
 
 /* ----------------- Recommended video---------------- */
 

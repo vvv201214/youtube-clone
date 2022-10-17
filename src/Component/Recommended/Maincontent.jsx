@@ -6,8 +6,9 @@ import { context } from '../Main';
 export default function Maincontent() {
 
   const key = "AIzaSyCjTtte52MAZ-H-YXxyXvSu2Sx1LX5rcUk";
-  const inputValue = "recommended video"
+  const inputValue = "computer"
   const [data, setData] = useState([]);
+
   let searchValue = useContext(context);
   
   useEffect(()=>{
@@ -19,11 +20,15 @@ export default function Maincontent() {
     }).catch((error)=>{
       console.log(error);
     })
+    return(()=>{
+      searchValue.setActiveHome(false);
+      console.log("dismounting");
+    })
   },[])
 
   return (
     <>
-      <h3>Recommended Video</h3>
+      <h3 className='rocommended_text'>Recommended Video</h3>
       <div className='recommended_video'>
           {data.map((elem)=>{
             return(
